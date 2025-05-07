@@ -7,6 +7,6 @@ def index(request):
     context={
         'obj': obj,
     }
-    return render(request, "index.html")
+    return render(request, "index.html", context)
 
 # Create your views here.
