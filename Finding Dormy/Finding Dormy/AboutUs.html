@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finding Dormy - About</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #02141A;
+      color: white;
+    }
+
+    nav {
+      background-color: #fca652;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #000000;
+      
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #000000;
+      
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+      
+    }
+
+    .city-skyline {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+    }
+
+    .main-content {
+      padding: 60px 40px;
+    }
+
+    .content-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+    }
+
+    .brand-logo {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .brand-logo img {
+      width: 200px;
+      height: auto;
+    }
+
+    .company-info {
+      width: 65%;
+    }
+
+    .company-info h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .company-info h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .company-info p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .team-section {
+      margin-top: 40px;
+    }
+
+    .team-header {
+      width: 30%;
+    }
+
+    .team-header h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .team-header p {
+      line-height: 1.6;
+    }
+
+    .team-members {
+      width: 60%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 10px;
+      justify-content: center;
+    }
+
+    .team-card {
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .team-card img {
+      width: 60%;
+      border-radius: 40px;
+    }
+
+    .member-name {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: #fca652;
+      color: black;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      border-top: 1px solid #333;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-brand img {
+      width: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .content-row {
+        flex-direction: column;
+      }
+
+      .brand-logo,
+      .company-info,
+      .team-header,
+      .team-members {
+        width: 100%;
+      }
+
+      .brand-logo {
+        margin-bottom: 30px;
+      }
+
+      .team-members {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="logo.gif" alt="Logo">
+      <span>Finding Dormy</span>
+    </div>
+    <ul>
+      <li><a href="findingdormy_parallax\mainscreen.html">Home</a></li>
+      <li><a href="dorm.html">Dorm List</a></li>
+      <li><a href="AboutUs.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <div class="content-row">
+      <div class="brand-logo">
+        <img src="logo2.png" alt="Finding Dormy Logo">
+      </div>
+      <div class="company-info">
+        <h1>Finding Dormy</h1>
+        <h2>Company</h2>
+        <p>Welcome to Finding Dormy! Our platform offers a user-friendly interface where users can browse available
+          dorms, access essential details such as amenities, safety features, and proximity to schools and universities.
+          Whether you're new to the city or just looking for a better living option, Finding Dormy makes your search
+          stress-free and efficient. We understand the challenges students face when searching for a safe, comfortable,
+          and affordable place to stay. That's why we developed an innovative app designed to help students find
+          dormitories around their area with ease.</p>
+        <p>Many students, particularly those new to a city, face the challenge of finding suitable and available dorms
+          or boarding houses near their desired location. This can be a time-consuming and frustrating process,
+          involving personal inquiries or extensive online searches. As a result, students may end up spending too much
+          time and money on temporary accommodations, or settle for suboptimal options that don't meet their needs. By
+          providing a comprehensive and user-friendly platform for finding nearby dorms or boarding houses, our app aims
+          to alleviate this problem and make the process of finding suitable accommodations easier and more efficient.
+        </p>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="team-header">
+        <h2>Meet The Team</h2>
+        <p>We are a team of students and tech enthusiasts committed to simplifying dorm hunting through a reliable and
+          user-friendly platform. Driven by firsthand experience, we aim to connect students with safe and affordable
+          living spaces effortlessly.</p>
+      </div>
+      <div class="team-members">
+        <div class="team-card">
+          <img src="larry.jpeg" alt="Larry">
+          <div class="member-name">Larry II Agad</div>
+        </div>
+        <div class="team-card">
+          <img src="carl.jpeg" alt="Carl">
+          <div class="member-name">Carl Valenciano</div>
+        </div>
+        <div class="team-card">
+          <img src="richard.jpeg" alt="Richard">
+          <div class="member-name">Richard Sunas</div>
+        </div>
+        <div class="team-card">
+          <img src="bon.jpeg" alt="Bon">
+          <div class="member-name">Bon Hernandez</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <span>About us</span>
+      <span>Help</span>
+      <span>Feedback</span>
+      <span>Data Privacy</span>
+      <span>Terms of Privacy</span>
+    </div>
+    <div class="footer-brand">
+      <img src="logo2.png" alt="Logo">
+      <span>FINDING DORMY</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
